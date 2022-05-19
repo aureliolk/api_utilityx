@@ -67,7 +67,7 @@ export class Time {
 
             return res.status(201).json({
                 date: {
-                    datename,
+                    dayname: datename,
                     day: date[0],
                     month: date[1],
                     age: date[2],
