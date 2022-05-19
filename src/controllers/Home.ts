@@ -68,9 +68,9 @@ export class Home {
         </div>
         <div class="code">
             <h3>VALIDA O CPF</h3>
-            <code>https://apiutilityx-production.up.railway.app/cpf/?cpf=00000000000 </code>
+            <code>https://apiutilityx-production.up.railway.app/cpf/?cpf=<strong><i>CPF_A_CONSULTAR</i></strong></code>
             <h3> VALIDA CPF COM DADOS DA RECEITA</h3>
-            <code>https://apiutilityx-production.up.railway.app/cpf/?cpf=00000000000&date=00000000 </code>
+            <code>https://apiutilityx-production.up.railway.app/cpf/?cpf=<strong><i>CPF_A_CONSULTAR</i></strong>&date=<strong><i>DATA_DE_NASCIMENTO</i></strong></code>
         </div>
     </div>
     <div>
@@ -80,7 +80,7 @@ export class Home {
         </div>
         <div class="code">
             <h3>VALIDA O CNPJ</h3>
-            <code>https://apiutilityx-production.up.railway.app/cnpj/?cpf=00000000000 </code>
+            <code>https://apiutilityx-production.up.railway.app/cnpj/?cnpj=<strong><i>CNPJ_A_CONSULTAR</i></strong> </code>
         </div>
     </div>
     <div>
@@ -90,9 +90,24 @@ export class Home {
         </div>
 
         <div class="code">
-            <h3>RETORNA DATA, HORA E CONDIÇÕES DO TEMPO</h3>
+            <h3>RETORNA DATA, HORA</h3>
             <code>https://apiutilityx-production.up.railway.app/time/ </code>
         </div>
+    </div>
+    <div>
+        <div class="title head">
+        <h2 class="title"> Endpoint GET CITY </h2>
+        <h2 class="title method"> METHOD: <span class="method"> GET </span> </h2>
+        </div>
+
+        <div class="code">
+            <h3>RETORNA DATA, HORA E CONDIÇÕES DO TEMPO</h3>
+            <code>https://apiutilityx-production.up.railway.app/city/ </code>
+        </div>
+        <div class="code">
+        <h3>RETORNA DATA, HORA E CONDIÇÕES DO TEMPO E ALTERA TOKEN DA API</h3>
+        <code>https://apiutilityx-production.up.railway.app/city/?token=<strong><i>TOKEN_API</i></strong></code>
+    </div>
     </div>
     `
         )
