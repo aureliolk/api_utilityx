@@ -1,10 +1,9 @@
 import { Request, Response } from 'express';
 import { cnpj } from 'cpf-cnpj-validator';
-const consultarCNPJ = require("consultar-cnpj");
 const Cnpj = cnpj
 
-export class ValidateCnpj{
-  async validatecnpj(req: Request, res: Response){
+export class ValidateCnpj {
+  async validatecnpj(req: Request, res: Response) {
     const { cnpj } = req.query;
   
     const cnpjx: any = cnpj
@@ -19,12 +18,11 @@ export class ValidateCnpj{
       })
     }
 
-    try {
-      const empresa = await consultarCNPJ(cnpjx);
-      return res.status(200).json(empresa)
-    } catch (error) {
-      return res.status(500).json(error)
-    }
+    return res.status(201).json({
+      cnpj: validateCnpj,
+      ncnpj: formatCnpj,
+      msg: "Cnpj é Valido"
+    })
+    
   }
 }
-
